@@ -36,3 +36,8 @@ Characteristics
 - Queue can handle multiple data.  
 - We can access both ends.  
 - They are fast and flexible.
+
+Operations  
+- Add (enqueue): add item to the end of the queue.
+- Remove (dequeue): remove item at the front of the queue.
+- Peek: Get the item at the front.

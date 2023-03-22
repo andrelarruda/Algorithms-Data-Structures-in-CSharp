@@ -2,10 +2,10 @@
 using Algorithms_Data_Structures.Algorithms;
 using Algorithms_Data_Structures.Arrays;
 using Algorithms_Data_Structures.Data_Structures.LinkedList;
+using Algorithms_Data_Structures.Data_Structures.Queue;
 using Algorithms_Data_Structures.Data_Structures.Stacks;
 
-TestStacks();
-// Parei em Stacks: https://youtu.be/KezSGYuYOMA?list=PL82C6-O4XrHf49SjEZWSa5DHN--ZRrcN_&t=1206
+TestQueues();
 
 static void TestLinkedLists()
 {
@@ -43,6 +43,21 @@ static void TestStacks()
         var val = myStack.Pop();
         Console.WriteLine(val);
     }
+}
+
+static void TestQueues()
+{
+    Queue queue = new Queue(10);
+
+    queue.Enqueue(1);
+    queue.Enqueue(2);
+    queue.Enqueue(3);
+    queue.Enqueue(4);
+
+    queue.Dequeue();
+    queue.Dequeue();
+
+    Console.WriteLine(queue.Peek());
 }
 
 
